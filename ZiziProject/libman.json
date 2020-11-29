@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "defaultProvider": "filesystem",
+  "libraries": [
+    {
+      "library": "Script/",
+      "destination": "wwwroot/Script/"
+    },
+    {
+      "library": "Content/css/",
+      "destination": "wwwroot/css/"
+    }
+  ]
+}
