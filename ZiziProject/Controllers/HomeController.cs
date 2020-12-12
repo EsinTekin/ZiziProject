@@ -11,11 +11,14 @@ namespace ZiziProject.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IPostRepo repo;
 
-        public HomeController(ILogger<HomeController> logger)
+
+       // ILogger<HomeController> logger
+        public HomeController(IPostRepo postRepository)
         {
-            _logger = logger;
+            repo = postRepository;
+          //  _logger = logger;
         }
 
         public IActionResult Index()
@@ -42,11 +45,10 @@ namespace ZiziProject.Controllers
         public IActionResult Eserler()
         {
             // repository nesnesinden bir örnek alıyoruz
-            PostRepository repo = new PostRepository();
+           // PostRepository repo = new PostRepository();
             // bir post nesnesi oluşturuyoruz
             var obj = new Post
             {
-                id = 1,
                 title = "İlk Blog Başlığı",
                 content = "İlk blog içeriği"
             };
@@ -55,7 +57,6 @@ namespace ZiziProject.Controllers
             // ikinci bir post nesnesi oluşturuyoruz
             var obj2 = new Post
             {
-                id = 2,
                 title = "İkinci Blog Başlığı",
                 content = "İkinci blog içeriği"
             };
