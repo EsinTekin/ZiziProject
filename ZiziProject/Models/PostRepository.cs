@@ -8,17 +8,23 @@ namespace ZiziProject.Models
 {
     public class PostRepository : IPostRepo
     {
-        List<Post> posts = new List<Post>();
+        private readonly AppDbContext _appDbContext;
+        // List<Post> posts = new List<Post>();
+        public PostRepository(AppDbContext appDbContext)
+        {
+            _appDbContext = appDbContext;
+        }
         public void AddPost(Post post)
         {
-            posts.Add(post);
-          
+            _appDbContext.posts.Add(post);
+            _appDbContext.SaveChanges();
+            //posts.Add(post);
         }
 
         public List<Post> GetAllPosts()
         {
-            return posts;
-       
+            return _appDbContext.posts.ToList<Post>();
+
         }
 
         public List<Post> GetByUser(IdentityUser user)
@@ -33,16 +39,16 @@ namespace ZiziProject.Models
 
         public Post GetPost(int id)
         {
-            Post temp = posts.FirstOrDefault(i => i.id == id);
+            Post temp = _appDbContext.posts.FirstOrDefault(i => i.id == id);
             return temp;
            
         }
 
         public void RemovePost(int id)
         {
-            Post temp = posts.FirstOrDefault(i => i.id == id);
-            posts.Remove(temp);
-            
+            Post temp = _appDbContext.posts.FirstOrDefault(i => i.id == id);
+            _appDbContext.posts.Remove(temp);
+            _appDbContext.SaveChanges();
         }
 
         void IPostRepo.UpdatePost(int id, Post post)
