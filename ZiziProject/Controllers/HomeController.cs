@@ -45,20 +45,22 @@ namespace ZiziProject.Controllers
         public IActionResult Eserler()
         {
             // repository nesnesinden bir örnek alıyoruz
-           // PostRepository repo = new PostRepository();
+            // PostRepository repo = new PostRepository();
             // bir post nesnesi oluşturuyoruz
             var obj = new Post
             {
                 title = "İlk Blog Başlığı",
-                content = "İlk blog içeriği"
+                content = "ilk blog içeriği"
             };
+            
             // nesneyi kayıt ediyoruz
             repo.AddPost(obj);
             // ikinci bir post nesnesi oluşturuyoruz
             var obj2 = new Post
             {
                 title = "İkinci Blog Başlığı",
-                content = "İkinci blog içeriği"
+                content="ikinci blog içeriği"
+                
             };
             // obj2 nesnesini kayıt ediyoruz
             repo.AddPost(obj2);
