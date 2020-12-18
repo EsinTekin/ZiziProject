@@ -81,7 +81,7 @@ namespace ZiziProject.Controllers
                 content = "6. blog içeriği"
             };
             repo.AddPost(obj6);
-            ViewData["secilenNesne"] = obj6;
+            //ViewData["secilenNesne"] = obj6;
             //var obj5 = repo.GetPost(16);
             //ViewData["secilenNesne"] = obj5;
             // obj3 içerisine id'si 1 olan nesneyi atıyoruz

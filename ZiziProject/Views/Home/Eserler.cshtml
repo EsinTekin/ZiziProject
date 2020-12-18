@@ -6,25 +6,505 @@
     <h1>Eserler</h1>*@
 
 @using ZiziProject.Models
-@model IEnumerable<Post>  
+@model IEnumerable<Post>
 @*// View içerisine geçirdiğimiz nesnenin tipi
-// Model adıyla birlikte View'e geçirdiğimiz nesneye erişiyoruz
-// Model liste tipli bir değişken olduğu için tek tek içerisindeki değerleri alıyoruz*@
+    // Model adıyla birlikte View'e geçirdiğimiz nesneye erişiyoruz
+    // Model liste tipli bir değişken olduğu için tek tek içerisindeki değerleri alıyoruz*@
+<div class="album py-5 bg-light">
+    <div class="container">
 
-@foreach (var item in Model)
-{
-    <div class="blog-post">
-        <h2 class="blog-post-title">@item.title </h2>
-        <p class="blog-post-meta">Tarih <a href="#">Kullanıcı</a></p>
-        <h3>@item.content</h3>
-    </div><!-- /.blog-post -->
-}
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/newyear10.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
 
-@*// HomeController içerisinde tanımladığımız ViewData nesnesini
-// Cast ederek değişkene atıyor ardından bir alt satırda kullanıyoruz*@
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
 
-@{
-    var data = (Post)ViewData["secilenNesne"];
-}
-<h2>Seçilen Nesne Başlığı: @data.title </h2>
-<h2>Seçilen Nesne Başlığı: @data.content </h2>
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/newyear9.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/newyear3.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/newyear5.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/newyear6.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/newyear7.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/newyear8.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/deniz1.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/bulgurlu1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/sehir1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/sehir2.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/sehir3.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/blue2.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/kilit1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/sarı1.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/maviler1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/green1.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/gezegenler1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/pembe1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/hallowen1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/kaktusler1..JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
+                            </div>
+                            @*<small class="text-muted">9 mins</small>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            @*// HomeController içerisinde tanımladığımız ViewData nesnesini
+                // Cast ederek değişkene atıyor ardından bir alt satırda kullanıyoruz*@
+
+            @{
+                var data = (Post)ViewData["secilenNesne"];
+            }
+            @*<h2>Seçilen Nesne Başlığı: @data.title </h2>*@
+            @*<h2>Seçilen Nesne Başlığı: @data.content </h2>*@
