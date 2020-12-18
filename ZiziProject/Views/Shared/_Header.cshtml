@@ -16,9 +16,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/Home/Hikayemiz">Hikayemiz</a>
                 </li>
-                @*<li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Eserler</a>
-            </li>*@
                 <li class="nav-item">
                     <a class="nav-link" href="/Home/Eserler">Eserler</a>
                 </li>
@@ -27,7 +24,7 @@
                 </li>
             </ul>
             @if (SignInManager.IsSignedIn(User))
-            {
+            {   
                 <li class="nav-item">
                     <a>@User.Identity.Name</a>
                 </li>
@@ -36,42 +33,27 @@
                     <a class="nav-item" asp-action="Logout" asp-controller="Account">Çıkış</a>
                 </li>
 
-            }
+             }
             else
             {
-                <li class="nav-item">
-                    <a class="nav-item" asp-action="Login" asp-controller="Account" style="color:white">Giriş</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-item" asp-action="Register" asp-controller="Account" style="color:white">Kaydol</a>
-                </li>
+                
+                <ul class="navbar-nav mr-3">
+                     <li class="nav-item">
+                        <a class="nav-item" asp-action="Login" asp-controller="Account" style="color:white" >Giriş</a>
+                     </li>
+                </ul>
+                <ul class="navbar-nav mr-4">
+                    <li class="nav-item">
+                        <a &emsp; class="nav-item" asp-action="Register" asp-controller="Account" style="color:white">Kaydol</a>
+                    </li>
+                </ul>
 
 
             }
-            <div id="widget ">
-                <div class="btn-o bg" data-scribe="component:button" style="width: 100%;"><a href="https://www.instagram.com/ziziartandcraft/" class="btn" id="b"><i class="fa fa-instagram ft14"></i><span class="label" id="l"style="color:mediumpurple">Instagram</span></a></div>
-            </div>
 
-            <div><i class="fa fa-instagram ft60 clr-prl"></i> </div>
+            &emsp;
+            <a href="https://www.instagram.com/ziziartandcraft/" target=new><img src="~/image/instaicon2.png" border="0" width="30" height="30"></img></a>
 
-            <div><i class="fa fa-instagram ft60 clr-blue"></i> </div>
-
-            @*<form class="btn-o bg">
-                <button  <a href="https://www.instagram.com/ziziartandcraft/" class="fa fa-instagram"></a></button>
-
-            </form>*@
-            @*<div class="flex-col hide-for-medium flex-right">
-            <ul class="nav top-bar-nav nav-right nav-small  nav-">
-                <li class="html header-social-icons ml-0">
-                    <div class="social-icons follow-icons"><a href="https://www.instagram.com/ziziartandcraft/" target="_blank" rel="noopener noreferrer nofollow" data-label="Instagram" class="icon plain  instagram tooltip" title="Instagram' da Takip Edin"><i class="icon-instagram"></i></a><a href="mailto:ziziartandcraft@outlook.com" data-label="E-mail" rel="nofollow" class="icon plain  email tooltip" title="Bize email gönderin"><i class="icon-envelop"></i></a></div>
-                </li>
-            </ul>
-        </div>*@
-            @*<form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ara</button>
-        </form>*@
         </div>
     </nav>
 </header>
