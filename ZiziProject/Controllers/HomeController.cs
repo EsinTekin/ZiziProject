@@ -14,11 +14,10 @@ namespace ZiziProject.Controllers
         private readonly IPostRepo repo;
 
 
-       // ILogger<HomeController> logger
+
         public HomeController(IPostRepo postRepository)
         {
             repo = postRepository;
-          //  _logger = logger;
         }
 
         public IActionResult Index()

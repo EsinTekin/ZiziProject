@@ -25,14 +25,16 @@
             </ul>
             @if (SignInManager.IsSignedIn(User))
             {   
-                <li class="nav-item">
-                    <a>@User.Identity.Name</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-item" asp-action="Logout" asp-controller="Account">Çıkış</a>
-                </li>
-
+                <ul class="navbar-nav mr-3">
+                     <li class="nav-item">
+                         <a style="color:white">Merhaba </a>  <a style="color:white"> @User.Identity.Name</a>
+                     </li>
+                </ul>
+                <ul class="navbar-nav mr-3">
+                     <li class="nav-item">
+                       <a &emsp; class="nav-item" asp-action="Logout" asp-controller="Account" style="color:lightgray">Çıkış</a>
+                     </li>
+                </ul>
              }
             else
             {

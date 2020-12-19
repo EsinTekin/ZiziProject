@@ -83,9 +83,4 @@ namespace ZiziProject.Controllers
             return RedirectToAction("Index", "Home");
         }
     }
-                            //public IActionResult Index()
-                            //    {
-                            //        return View();
-                            //    }
-                            //}
 }
