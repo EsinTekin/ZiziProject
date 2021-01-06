@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZiziProject", "ZiziProject\ZiziProject.csproj", "{267A7CF4-0580-4388-B93A-9390C7429971}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZiziProject", "ZiziProject\ZiziProject.csproj", "{267A7CF4-0580-4388-B93A-9390C7429971}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonelApp.Domains", "PersonelApp.Domains\PersonelApp.Domains.csproj", "{7E077656-2321-45F4-9490-EFCF337CCC1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonnelApp.DAL", "PersonnelApp.DAL\PersonnelApp.DAL.csproj", "{CF088999-9BDA-42C5-A6B9-BD8DB3354B43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{267A7CF4-0580-4388-B93A-9390C7429971}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{267A7CF4-0580-4388-B93A-9390C7429971}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{267A7CF4-0580-4388-B93A-9390C7429971}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E077656-2321-45F4-9490-EFCF337CCC1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E077656-2321-45F4-9490-EFCF337CCC1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E077656-2321-45F4-9490-EFCF337CCC1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E077656-2321-45F4-9490-EFCF337CCC1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF088999-9BDA-42C5-A6B9-BD8DB3354B43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF088999-9BDA-42C5-A6B9-BD8DB3354B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF088999-9BDA-42C5-A6B9-BD8DB3354B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF088999-9BDA-42C5-A6B9-BD8DB3354B43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
