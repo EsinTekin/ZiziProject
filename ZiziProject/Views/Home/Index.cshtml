@@ -1,7 +1,42 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .alert {
+            padding: 15px;
+            background-color: #BA55D3;
+            color: white;
+        }
 
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+            .closebtn:hover {
+                color: white;
+            }
+    </style>
+</head>
+<body>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>
+            Merhaba sanat sever,
+        </strong> sana özel fırsat ve indirimlerden haberdar olmak için kaydol!
+    </div>
+
+</body>
+</html>
 <div class="text-center">
     <h1>ZiziArt&Craft</h1>
 </div>

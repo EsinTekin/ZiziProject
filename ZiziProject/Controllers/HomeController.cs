@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -94,6 +95,12 @@ namespace ZiziProject.Controllers
            // return View();
         }
         public IActionResult Iletisim()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public IActionResult Firsatlar()
         {
             return View();
         }
