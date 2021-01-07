@@ -10,9 +10,7 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="~/image/newyear10.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
-
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+                    <img src="~/image/newyear10.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Cüceler"><rect width="100%" height="100%" fill="#55595c" /></img>
 
                     <div class="card-body">
                         <p class="card-text">
@@ -20,21 +18,89 @@
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
                                 <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
 
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
                             </div>
-                            @*<small class="text-muted">9 mins</small>*@
+                            <html>
+
+                                <head>
+                                    <meta charset="UTF-8">
+                                    <link rel="stylesheet" type="text/css" href="style.css">
+                                    <title>Star rating using pure CSS</title>
+
+                                </head>
+
+                                <body>
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" >5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" >4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" >3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" >2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" >1 star</label>
+                                    </div>
+                                    <style>
+                                        *{
+                                            margin: 0;
+                                            padding: 0;
+                                        }
+
+                                        .rate {
+                                            float: left;
+                                            height: 40px;
+                                            padding: 0 9px;
+                                        }
+
+                                            .rate:not(:checked) > input {
+                                                position: absolute;
+                                                top: -9999px;
+                                            }
+
+                                            .rate:not(:checked) > label {
+                                                float: right;
+                                                width: 1em;
+                                                overflow: hidden;
+                                                white-space: nowrap;
+                                                cursor: pointer;
+                                                font-size: 25px;
+                                                color: #ccc;
+                                            }
+
+                                                .rate:not(:checked) > label:before {
+                                                    content: '★ ';
+                                                }
+
+                                            .rate > input:checked ~ label {
+                                                color: #ffc700;
+                                            }
+
+                                            .rate:not(:checked) > label:hover,
+                                            .rate:not(:checked) > label:hover ~ label {
+                                                color: #deb217;
+                                            }
+
+                                            .rate > input:checked + label:hover,
+                                            .rate > input:checked + label:hover ~ label,
+                                            .rate > input:checked ~ label:hover,
+                                            .rate > input:checked ~ label:hover ~ label,
+                                            .rate > label:hover ~ input:checked ~ label {
+                                                color: #c59b08;
+                                            }
+                                    </style>
+                                </body>
+
+                            </html>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="~/image/newyear9.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
-
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+                    <img src="~/image/newyear9.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Şekerlemeler"><rect width="100%" height="100%" fill="#55595c" /></img>
 
                     <div class="card-body">
                         <p class="card-text">
@@ -42,21 +108,89 @@
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
                                 <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
 
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
                             </div>
-                            @*<small class="text-muted">9 mins</small>*@
+                            <html>
+
+                                <head>
+                                    <meta charset="UTF-8">
+                                    <link rel="stylesheet" type="text/css" href="style.css">
+                                    <title>Star rating using pure CSS</title>
+
+                                </head>
+
+                                <body>
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" >5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" >4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" >3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" >2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" >1 star</label>
+                                    </div>
+                                    <style>
+                                        * {
+                                            margin: 0;
+                                            padding: 0;
+                                        }
+
+                                        .rate {
+                                            float: left;
+                                            height: 40px;
+                                            padding: 0 9px;
+                                        }
+
+                                            .rate:not(:checked) > input {
+                                                position: absolute;
+                                                top: -9999px;
+                                            }
+
+                                            .rate:not(:checked) > label {
+                                                float: right;
+                                                width: 1em;
+                                                overflow: hidden;
+                                                white-space: nowrap;
+                                                cursor: pointer;
+                                                font-size: 25px;
+                                                color: #ccc;
+                                            }
+
+                                                .rate:not(:checked) > label:before {
+                                                    content: '★ ';
+                                                }
+
+                                            .rate > input:checked ~ label {
+                                                color: #ffc700;
+                                            }
+
+                                            .rate:not(:checked) > label:hover,
+                                            .rate:not(:checked) > label:hover ~ label {
+                                                color: #deb217;
+                                            }
+
+                                            .rate > input:checked + label:hover,
+                                            .rate > input:checked + label:hover ~ label,
+                                            .rate > input:checked ~ label:hover,
+                                            .rate > input:checked ~ label:hover ~ label,
+                                            .rate > label:hover ~ input:checked ~ label {
+                                                color: #c59b08;
+                                            }
+                                    </style>
+                                </body>
+
+                             </html>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="~/image/newyear3.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
-
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+                    <img src="~/image/newyear3.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Merry Christmas"><rect width="100%" height="100%" fill="#55595c" /></img>
 
                     <div class="card-body">
                         <p class="card-text">
@@ -64,21 +198,90 @@
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
                                 <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
 
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
                             </div>
-                            @*<small class="text-muted">9 mins</small>*@
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5" >5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4" >4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3" >3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2" >2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1" >1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="~/image/newyear5.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+                    <img src="~/image/newyear5.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Star"><rect width="100%" height="100%" fill="#55595c" /></img>
 
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
 
                     <div class="card-body">
                         <p class="card-text">
@@ -86,291 +289,82 @@
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
                                 <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
 
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
                             </div>
-                            @*<small class="text-muted">9 mins</small>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            <html>
 
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="~/image/newyear6.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
 
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+                            </head>
 
-                    <div class="card-body">
-                        <p class="card-text">
-                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
-                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5" >5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4" >4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3" >3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2" >2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1" >1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
 
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
-                            </div>
-                            @*<small class="text-muted">9 mins</small>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
 
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="~/image/newyear7.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
 
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
 
-                    <div class="card-body">
-                        <p class="card-text">
-                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
-                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
 
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
-                            </div>
-                            @*<small class="text-muted">9 mins</small>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
 
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="~/image/newyear8.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
 
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
 
-                    <div class="card-body">
-                        <p class="card-text">
-                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
-                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
-
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
-                            </div>
-                            @*<small class="text-muted">9 mins</small>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="~/image/deniz1.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
-
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
-
-                    <div class="card-body">
-                        <p class="card-text">
-                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
-                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
-
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
-                            </div>
-                            @*<small class="text-muted">9 mins</small>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="~/image/bulgurlu1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
-
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
-
-                    <div class="card-body">
-                        <p class="card-text">
-                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
-                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
-
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
-                            </div>
-                            @*<small class="text-muted">9 mins</small>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="~/image/sehir1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
-
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
-
-                    <div class="card-body">
-                        <p class="card-text">
-                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
-                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
-
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
-                            </div>
-                            @*<small class="text-muted">9 mins</small>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="~/image/sehir2.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
-
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
-
-                    <div class="card-body">
-                        <p class="card-text">
-                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
-                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
-
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
-                            </div>
-                            @*<small class="text-muted">9 mins</small>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="~/image/sehir3.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
-
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
-
-                    <div class="card-body">
-                        <p class="card-text">
-                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
-                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
-
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
-                            </div>
-                            @*<small class="text-muted">9 mins</small>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="~/image/blue2.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
-
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
-
-                    <div class="card-body">
-                        <p class="card-text">
-                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
-                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
-
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
-                            </div>
-                            @*<small class="text-muted">9 mins</small>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="~/image/kilit1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
-
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
-
-                    <div class="card-body">
-                        <p class="card-text">
-                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
-                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
-
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
-                            </div>
-                            @*<small class="text-muted">9 mins</small>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="~/image/sarı1.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
-
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
-
-                    <div class="card-body">
-                        <p class="card-text">
-                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
-                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
-
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
-                            </div>
-                            @*<small class="text-muted">9 mins</small>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="~/image/maviler1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
-
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
-
-                    <div class="card-body">
-                        <p class="card-text">
-                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
-                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
-
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
-                            </div>
-                            @*<small class="text-muted">9 mins</small>*@
+                        </html>
                         </div>
                     </div>
                 </div>
@@ -378,9 +372,8 @@
 
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="~/image/green1.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+                    <img src="~/image/newyear6.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Kar küresi"><rect width="100%" height="100%" fill="#55595c" /></img>
 
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
 
                     <div class="card-body">
                         <p class="card-text">
@@ -388,12 +381,1189 @@
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
                                 <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
 
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
                             </div>
-                            @*<small class="text-muted">9 mins</small>*@
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1">1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/newyear7.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Cookie"><rect width="100%" height="100%" fill="#55595c" /></img>
+
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                            </div>
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1">1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/newyear8.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Present"><rect width="100%" height="100%" fill="#55595c" /></img>
+
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                            </div>
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1">1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/deniz1.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"title="Beach"><rect width="100%" height="100%" fill="#55595c" /></img>
+
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                            </div>
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1">1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/bulgurlu1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Manzara"><rect width="100%" height="100%" fill="#55595c" /></img>
+
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                            </div>
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1">1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/sehir1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="City"><rect width="100%" height="100%" fill="#55595c" /></img>
+
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                            </div>
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1">1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/sehir2.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Gezegen"><rect width="100%" height="100%" fill="#55595c" /></img>
+
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                            </div>
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1">1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/sehir3.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Farklılık"><rect width="100%" height="100%" fill="#55595c" /></img>
+
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                            </div>
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1">1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/blue2.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Mavi Rüzgar"><rect width="100%" height="100%" fill="#55595c" /></img>
+
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                            </div>
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1">1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/kilit1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Mavi"><rect width="100%" height="100%" fill="#55595c" /></img>
+
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                            </div>
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1">1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/sarı1.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Air"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                            </div>
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1">1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/maviler1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Water"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                            </div>
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1">1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="~/image/green1.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Earth"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            10 x 10 cm çerçevelerde kağıt üzerine sulu boya ve karışık teknik.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
+
+                            </div>
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1">1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
                         </div>
                     </div>
                 </div>
@@ -402,9 +1572,8 @@
 
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="~/image/gezegenler1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+                    <img src="~/image/gezegenler1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Taş"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
 
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
 
                     <div class="card-body">
                         <p class="card-text">
@@ -412,12 +1581,82 @@
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
                                 <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
 
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
                             </div>
-                            @*<small class="text-muted">9 mins</small>*@
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1">1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
                         </div>
                     </div>
                 </div>
@@ -425,9 +1664,8 @@
 
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="~/image/pembe1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+                    <img src="~/image/pembe1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Fire"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
 
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
 
                     <div class="card-body">
                         <p class="card-text">
@@ -435,12 +1673,82 @@
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
                                 <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
 
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
                             </div>
-                            @*<small class="text-muted">9 mins</small>*@
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1">1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
                         </div>
                     </div>
                 </div>
@@ -448,9 +1756,8 @@
 
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="~/image/hallowen1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+                    <img src="~/image/hallowen1.JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Hallowen"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
 
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
 
                     <div class="card-body">
                         <p class="card-text">
@@ -458,21 +1765,90 @@
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
                                 <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
 
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
                             </div>
-                            @*<small class="text-muted">9 mins</small>*@
+                            <html>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                                <title>Star rating using pure CSS</title>
+
+                            </head>
+
+                            <body>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1">1 star</label>
+                                </div>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .rate {
+                                        float: left;
+                                        height: 40px;
+                                        padding: 0 9px;
+                                    }
+
+                                        .rate:not(:checked) > input {
+                                            position: absolute;
+                                            top: -9999px;
+                                        }
+
+                                        .rate:not(:checked) > label {
+                                            float: right;
+                                            width: 1em;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            cursor: pointer;
+                                            font-size: 25px;
+                                            color: #ccc;
+                                        }
+
+                                            .rate:not(:checked) > label:before {
+                                                content: '★ ';
+                                            }
+
+                                        .rate > input:checked ~ label {
+                                            color: #ffc700;
+                                        }
+
+                                        .rate:not(:checked) > label:hover,
+                                        .rate:not(:checked) > label:hover ~ label {
+                                            color: #deb217;
+                                        }
+
+                                        .rate > input:checked + label:hover,
+                                        .rate > input:checked + label:hover ~ label,
+                                        .rate > input:checked ~ label:hover,
+                                        .rate > input:checked ~ label:hover ~ label,
+                                        .rate > label:hover ~ input:checked ~ label {
+                                            color: #c59b08;
+                                        }
+                                </style>
+                            </body>
+
+                        </html>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="~/image/kaktusler1..JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
+                    <img src="~/image/kaktusler1..JPG" class="bd-placeholder-img card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" title="Kaktüs"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /></img>
 
-                    @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
 
                     <div class="card-body">
                         <p class="card-text">
@@ -480,12 +1856,82 @@
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                @*<button type="button" href="/Home/Iletisim/" class="btn btn-sm btn-outline-secondary" role="button">İletişim için DM</button>*@
                                 <p><a class="btn btn-secondary" href="/Home/Iletisim" role="button"> İletişim için DM &raquo;</a></p>
 
-                                @*<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>*@
                             </div>
-                            @*<small class="text-muted">9 mins</small>*@
+                            <html>
+
+                                <head>
+                                    <meta charset="UTF-8">
+                                    <link rel="stylesheet" type="text/css" href="style.css">
+                                    <title>Star rating using pure CSS</title>
+
+                                </head>
+
+                                <body>
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1">1 star</label>
+                                    </div>
+                                    <style>
+                                        * {
+                                            margin: 0;
+                                            padding: 0;
+                                        }
+
+                                        .rate {
+                                            float: left;
+                                            height: 40px;
+                                            padding: 0 9px;
+                                        }
+
+                                            .rate:not(:checked) > input {
+                                                position: absolute;
+                                                top: -9999px;
+                                            }
+
+                                            .rate:not(:checked) > label {
+                                                float: right;
+                                                width: 1em;
+                                                overflow: hidden;
+                                                white-space: nowrap;
+                                                cursor: pointer;
+                                                font-size: 25px;
+                                                color: #ccc;
+                                            }
+
+                                                .rate:not(:checked) > label:before {
+                                                    content: '★ ';
+                                                }
+
+                                            .rate > input:checked ~ label {
+                                                color: #ffc700;
+                                            }
+
+                                            .rate:not(:checked) > label:hover,
+                                            .rate:not(:checked) > label:hover ~ label {
+                                                color: #deb217;
+                                            }
+
+                                            .rate > input:checked + label:hover,
+                                            .rate > input:checked + label:hover ~ label,
+                                            .rate > input:checked ~ label:hover,
+                                            .rate > input:checked ~ label:hover ~ label,
+                                            .rate > label:hover ~ input:checked ~ label {
+                                                color: #c59b08;
+                                            }
+                                    </style>
+                                </body>
+
+                            </html>
                         </div>
                     </div>
                 </div>
