@@ -1,0 +1,35 @@
+﻿@model ZiziProject.ViewModel.Login
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+
+
+<div class="overlay"></div>
+<div class="container">
+    <p><h2>Kaydol</h2></p>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Register" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="username" class="control-label"></label>
+                        <input asp-for="username" class="form-control" />
+                        <span asp-validation-for="username" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="password" class="control-label"></label>
+                        <input asp-for="password" class="form-control" />
+                        <span asp-validation-for="password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Kaydol</button>
+                        @*<input type="submit" value="Register" class="btn btn-default" />*@
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>

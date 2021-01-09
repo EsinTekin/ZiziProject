@@ -1,32 +1,64 @@
-﻿
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">ZiziArt&Craft</a>
+        <a class="navbar-brand" href="/Home">ZiziArt&Craft</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Anasayfa <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/Home/Index">Anasayfa <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Hikayemiz</a>
-                </li>
-                @*<li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Eserler</a>
-                    </li>*@
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Eserler</a>
+                    <a class="nav-link" href="/Home/Hikayemiz">Hikayemiz</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">İletişim</a>
+                    <a class="nav-link" href="/Home/Eserler">Eserler</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home/Iletisim">İletişim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home/Firsatlar">Size özel fırsatlar! </a>
                 </li>
             </ul>
-            <form class="form-inline mt-2 mt-md-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ara</button>
-            </form>
+            @if (SignInManager.IsSignedIn(User))
+            {   
+                <ul class="navbar-nav mr-3">
+                     <li class="nav-item">
+                         <a style="color:white">Merhaba </a>  <a style="color:white"> @User.Identity.Name</a>
+                     </li>
+                </ul>
+                <ul class="navbar-nav mr-3">
+                     <li class="nav-item">
+                       <a &emsp; class="nav-item" asp-action="Logout" asp-controller="Account" style="color:lightgray">Çıkış</a>
+                     </li>
+                </ul>
+             }
+            else
+            {
+                
+                <ul class="navbar-nav mr-3">
+                     <li class="nav-item">
+                        <a class="nav-item" asp-action="Login" asp-controller="Account" style="color:white" >Giriş</a>
+                     </li>
+                </ul>
+                <ul class="navbar-nav mr-4">
+                    <li class="nav-item">
+                        <a &emsp; class="nav-item" asp-action="Register" asp-controller="Account" style="color:white">Kaydol</a>
+                    </li>
+                </ul>
+
+
+            }
+
+            &emsp;
+            <a href="https://www.instagram.com/ziziartandcraft/" target=new><img src="~/image/instaicon2.png" border="0" width="30" height="30"></img></a>
+
         </div>
     </nav>
 </header>
